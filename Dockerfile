@@ -13,6 +13,7 @@ COPY logo.jpeg /usr/share/nginx/html/
 COPY sticky-logo.png /usr/share/nginx/html/
 COPY IMG_0585.JPG /usr/share/nginx/html/
 COPY rn8-logo.svg /usr/share/nginx/html/
+COPY rn8-logo-transparent.svg /usr/share/nginx/html/
 COPY qorai-logo.png /usr/share/nginx/html/
 
 # Health check
