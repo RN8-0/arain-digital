@@ -13,4 +13,5 @@ jobs:
       - name: Trigger Coolify Deploy
         run: |
           curl --silent --show-error --fail \
-            -X GET "${{ secrets.COOLIFY_WEBHOOK_URL }}"
+            -X GET "https://coolify.46.225.95.201.sslip.io/api/v1/deploy?uuid=dt2vqe6hsy18d2hofookbznt&force=false" \
+            -H "Authorization: Bearer ${{ secrets.COOLIFY_TOKEN }}"
