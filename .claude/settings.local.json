@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show:*)",
+      "Bash(convert:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(nvm use:*)",
+      "Bash(firebase deploy:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
