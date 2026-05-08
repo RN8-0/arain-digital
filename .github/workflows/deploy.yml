@@ -1,0 +1,16 @@
+name: Deploy to Coolify
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Trigger Coolify Deploy
+        run: |
+          curl --silent --show-error --fail \
+            -X GET "${{ secrets.COOLIFY_WEBHOOK_URL }}"
