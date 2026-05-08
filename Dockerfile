@@ -12,6 +12,8 @@ COPY logo.png /usr/share/nginx/html/
 COPY logo.jpeg /usr/share/nginx/html/
 COPY sticky-logo.png /usr/share/nginx/html/
 COPY IMG_0585.JPG /usr/share/nginx/html/
+COPY rn8-logo.svg /usr/share/nginx/html/
+COPY qorai-logo.png /usr/share/nginx/html/
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
