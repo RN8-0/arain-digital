@@ -7,14 +7,13 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Statik dosyaları kopyala
 COPY index.html /usr/share/nginx/html/
 COPY 404.html /usr/share/nginx/html/
-COPY favicon.svg /usr/share/nginx/html/
 COPY logo.png /usr/share/nginx/html/
 COPY logo.jpeg /usr/share/nginx/html/
 COPY sticky-logo.png /usr/share/nginx/html/
-COPY IMG_0585.JPG /usr/share/nginx/html/
 COPY rn8-logo.svg /usr/share/nginx/html/
 COPY rn8-logo-transparent.svg /usr/share/nginx/html/
 COPY qorai-logo.png /usr/share/nginx/html/
+COPY app-ads.txt /usr/share/nginx/html/
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
